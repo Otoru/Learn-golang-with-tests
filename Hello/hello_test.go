@@ -1,6 +1,15 @@
 package main
 
-import "testing"
+import (
+	"fmt"
+	"testing"
+)
+
+func ExampleHello() {
+	message := Hello("Vitor", "english")
+	fmt.Println(message)
+	// Output: Hello Vitor
+}
 
 func TestHello(t *testing.T) {
 
