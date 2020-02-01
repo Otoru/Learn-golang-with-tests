@@ -2,6 +2,7 @@ package integers
 
 import (
 	"fmt"
+	"math/rand"
 	"testing"
 )
 
@@ -25,4 +26,12 @@ func ExampleAdd() {
 	result := Add(1, 5)
 	fmt.Println(result)
 	// Output: 6
+}
+
+func BenchmarkAdd(b *testing.B) {
+	firstChoice := rand.Intn(9)
+	secondChoice := rand.Intn(9)
+	for i := 0; i < b.N; i++ {
+		Add(firstChoice, secondChoice)
+	}
 }

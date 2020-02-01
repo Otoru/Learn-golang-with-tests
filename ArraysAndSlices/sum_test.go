@@ -1,6 +1,8 @@
 package main
 
 import (
+	"fmt"
+	"math/rand"
 	"reflect"
 	"testing"
 )
@@ -36,6 +38,19 @@ func TestSum(t *testing.T) {
 	})
 }
 
+func ExampleSum() {
+	result := Sum([]int{1, 2, 3})
+	fmt.Println(result)
+	// Output: 6
+}
+
+func BenchmarkSum(b *testing.B) {
+	array := []int{rand.Intn(9), rand.Intn(9), rand.Intn(9), rand.Intn(9)}
+	for i := 0; i < b.N; i++ {
+		Sum(array)
+	}
+}
+
 func TestSumAll(t *testing.T) {
 
 	checkSums := func(t *testing.T, got, want []int, size string) {
@@ -66,6 +81,20 @@ func TestSumAll(t *testing.T) {
 
 }
 
+func ExampleSumAll() {
+	result := SumAll([]int{1, 2, 3}, []int{3, 2, 1})
+	fmt.Println(result)
+	// Output: [6 6]
+}
+
+func BenchmarkSumAll(b *testing.B) {
+	firstArray := []int{rand.Intn(9), rand.Intn(9), rand.Intn(9), rand.Intn(9)}
+	secondArray := []int{rand.Intn(9), rand.Intn(9), rand.Intn(9), rand.Intn(9)}
+	for i := 0; i < b.N; i++ {
+		SumAll(firstArray, secondArray)
+	}
+}
+
 func TestSumAllTails(t *testing.T) {
 
 	checkSums := func(t *testing.T, got, want []int) {
@@ -87,4 +116,18 @@ func TestSumAllTails(t *testing.T) {
 		checkSums(t, got, want)
 	})
 
+}
+
+func ExampleSumAllTails() {
+	result := SumAllTails([]int{1, 2, 3}, []int{3, 2, 1})
+	fmt.Println(result)
+	// Output: [5 3]
+}
+
+func BenchmarkSumAllTails(b *testing.B) {
+	firstArray := []int{rand.Intn(9), rand.Intn(9), rand.Intn(9), rand.Intn(9)}
+	secondArray := []int{rand.Intn(9), rand.Intn(9), rand.Intn(9), rand.Intn(9)}
+	for i := 0; i < b.N; i++ {
+		SumAllTails(firstArray, secondArray)
+	}
 }

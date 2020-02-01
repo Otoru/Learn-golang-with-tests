@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"math/rand"
 	"testing"
 )
 
@@ -27,7 +28,7 @@ func TestHello(t *testing.T) {
 	})
 
 	t.Run("Say 'Hello World' when an empty string is supplied.", func(t *testing.T) {
-		got := Hello("", "english")
+		got := Hello("", "English")
 		const want string = "Hello World"
 		assertMessage(t, got, want)
 	})
@@ -44,4 +45,13 @@ func TestHello(t *testing.T) {
 		assertMessage(t, got, want)
 	})
 
+}
+
+func BenchmarkHello(b *testing.B) {
+	options := []string{"English", "Spanish", "French"}
+	len := len(options)
+	for i := 0; i < b.N; i++ {
+		choice := rand.Intn(len)
+		Hello("Vitor", options[choice])
+	}
 }
