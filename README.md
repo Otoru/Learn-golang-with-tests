@@ -12,6 +12,7 @@ Studies based on the book [Learn Go with Tests](https://quii.gitbook.io/learn-go
 - [Arrays and Slices](./ArraysAndSlices) - Once you know the iteration, it makes sense to start working with arrays and slices.
 - [Structs, methods and interfaces](./Structs) - The structs are the closest to objects in golang.
 - [Pointers and errors](./Pointers) - The structs are the closest to objects in golang.
+- [Maps](./Maps) - A way to store items by a key and search for them quickly.
 
 ## Author
 
