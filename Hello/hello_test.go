@@ -17,7 +17,7 @@ func TestHello(t *testing.T) {
 	assertMessage := func(t *testing.T, got, want string) {
 		t.Helper()
 		if got != want {
-			t.Errorf("got '%q' and want '%q'.", got, want)
+			t.Errorf("Got '%q' and want '%q'.", got, want)
 		}
 	}
 

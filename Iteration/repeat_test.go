@@ -11,7 +11,7 @@ func TestRepeat(t *testing.T) {
 	assert := func(t *testing.T, repeated, expected string) {
 		t.Helper()
 		if repeated != expected {
-			t.Errorf("expected '%q' and got '%q'.", repeated, expected)
+			t.Errorf("Expected '%q' and got '%q'.", repeated, expected)
 		}
 	}
 

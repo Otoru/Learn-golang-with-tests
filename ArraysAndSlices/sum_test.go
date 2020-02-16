@@ -12,7 +12,7 @@ func TestSum(t *testing.T) {
 	checkSum := func(t *testing.T, result, want int) {
 		t.Helper()
 		if result != want {
-			t.Errorf("got '%d' and want '%d'.", result, want)
+			t.Errorf("Got '%d' and want '%d'.", result, want)
 		}
 	}
 
@@ -56,7 +56,7 @@ func TestSumAll(t *testing.T) {
 	checkSums := func(t *testing.T, got, want []int, size string) {
 		t.Helper()
 		if !reflect.DeepEqual(got, want) {
-			t.Errorf("got '%d' and want '%d' given %s array.", got, want, size)
+			t.Errorf("Got '%d' and want '%d' given %s array.", got, want, size)
 		}
 	}
 

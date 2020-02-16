@@ -11,7 +11,7 @@ func TestAdd(t *testing.T) {
 	assertResult := func(t *testing.T, got, want int) {
 		t.Helper()
 		if got != want {
-			t.Errorf("got '%q' and want '%q'.", got, want)
+			t.Errorf("Got '%q' and want '%q'.", got, want)
 		}
 	}
 

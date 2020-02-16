@@ -11,7 +11,7 @@ func TestPerimeter(t *testing.T) {
 	assert := func(t *testing.T, result, expected float64) {
 		t.Helper()
 		if result != expected {
-			t.Errorf("got '%f' and want '%f'.", result, expected)
+			t.Errorf("Got '%f' and want '%f'.", result, expected)
 		}
 	}
 
@@ -62,7 +62,7 @@ func TestArea(t *testing.T) {
 		t.Run(item.name, func(t *testing.T) {
 			result := item.shape.Area()
 			if result != item.area {
-				t.Errorf("%#v got %g want %g", item.shape, result, item.area)
+				t.Errorf("'%#v' got '%g' want '%g'.", item.shape, result, item.area)
 			}
 		})
 

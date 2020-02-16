@@ -13,6 +13,8 @@ Studies based on the book [Learn Go with Tests](https://quii.gitbook.io/learn-go
 - [Structs, methods and interfaces](./Structs) - The structs are the closest to objects in golang.
 - [Pointers and errors](./Pointers) - The structs are the closest to objects in golang.
 - [Maps](./Maps) - A way to store items by a key and search for them quickly.
+- [Dependency Injection](./DependencyInjection) - A simple example of dependency injection.
+- [Mocking](./Mocking) - Mock objects are objects that simulate the behavior of real objects in a controlled manner.
 
 ## Author
 

@@ -23,7 +23,7 @@ func (w *Wallet) Deposit(amount Bitcoin) {
 }
 
 // ErrInsufficientFunds means that the wallet does not have enough Bitcoin for the requested transaction
-var ErrInsufficientFunds = errors.New("cannot withdraw, insufficient funds")
+var ErrInsufficientFunds = errors.New("Cannot withdraw, insufficient funds")
 
 // Withdraw subtracts some Bitcoin from the wallet
 // Return an error if it cannot be performed
