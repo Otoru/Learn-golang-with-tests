@@ -1,6 +1,14 @@
-# Learning Golang with tests
+<h1 align="center">Learning Golang with tests</h1>
 
-Repository created to record the golang learning process.
+<p align="center">
+    <img src="https://static.imasters.com.br/wp-content/uploads/2018/10/24174307/0_OWUKWmE-4jdrLpx7.png" />
+</p>
+
+<p align="center">
+  Repository created to record the golang learning process.
+</p>
+
+## Notes
 
 Studies based on the book [Learn Go with Tests](https://quii.gitbook.io/learn-go-with-tests/).
 
@@ -15,7 +23,9 @@ Studies based on the book [Learn Go with Tests](https://quii.gitbook.io/learn-go
 - [Maps](./Maps) - A way to store items by a key and search for them quickly.
 - [Dependency Injection](./DependencyInjection) - A simple example of dependency injection.
 - [Mocking](./Mocking) - Mock objects are objects that simulate the behavior of real objects in a controlled manner.
+- [Concurrency](./Concurrency) - Large programs are often made up of many smaller subprograms.
 
 ## Author
 
-Repository created by Vitor Hugo de Oliveira Vargas.
+| [<img src="https://avatars0.githubusercontent.com/u/26543872?v=3&s=115"><br><sub>@Otoru</sub>](https://github.com/Otoru) |
+| :----------------------------------------------------------------------------------------------------------------------: |
