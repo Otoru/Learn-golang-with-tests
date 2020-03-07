@@ -24,6 +24,7 @@ Studies based on the book [Learn Go with Tests](https://quii.gitbook.io/learn-go
 - [Dependency Injection](./DependencyInjection) - A simple example of dependency injection.
 - [Mocking](./Mocking) - Mock objects are objects that simulate the behavior of real objects in a controlled manner.
 - [Concurrency](./Concurrency) - Large programs are often made up of many smaller subprograms.
+- [Select](./Select) - Select lets you wait on multiple channel operations.
 
 ## Author
 
